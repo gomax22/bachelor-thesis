@@ -1,0 +1,103 @@
+\documentclass[12pt,italian,a4paper,oneside,openright]{book}
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{wrapfig}
+\usepackage{minted}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage[hyphens]{url}
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+\addbibresource{bibliography.bib}
+\addbibresource{Sitography.bib}
+\setcounter{biburllcpenalty}{7000}
+\setcounter{biburlucpenalty}{8000}
+\usepackage{amsfonts}
+\usepackage{epsfig}
+\usepackage{adjustbox}
+\usepackage[T1]{fontenc}
+\usepackage{subcaption}
+\usepackage{mwe}
+\usepackage[italian]{babel}
+%\usepackage[latin1]{inputenc}
+
+%\usepackage[format=hang,font=footnotesize]{caption}
+\usepackage{vmargin}
+\usepackage{indentfirst}
+\usepackage[hyperindex]{hyperref} %per l'indice interattivo
+\hypersetup{breaklinks=true}
+\hypersetup{colorlinks=true, linkcolor=black} %per colorare i link
+%\DeclareGraphicsRule{.jpg}{jpg}{}{} %da commentare per il PDF
+%\DeclareGraphicsRule{.bmp} {bmp}{}{} %da commentare per il PDF
+\setmarginsrb{35mm}{30mm}{30mm}{30mm}{0mm}{10mm}{0mm}{10mm}
+%%\setmarginsrb{1.5cm}{1.5cm}{1,2cm}{1,5cm}{0cm}{2cm}{2cm}{2cm}
+
+\begin{document}
+\include{title_page}
+\newpage
+\thispagestyle{plain}
+\markboth{Indice}{Indice}
+\tableofcontents
+\cleardoublepage
+% \phantomsection
+\addcontentsline{toc}{chapter}{Elenco delle figure}
+\listoffigures
+\cleardoublepage
+% \phantomsection
+\addcontentsline{toc}{chapter}{Elenco delle tabelle}
+\listoftables
+\newpage
+\thispagestyle{plain}
+\markboth{\large{INTRODUZIONE}}{\large{INTRODUZIONE}}
+\cleardoublepage
+% \phantomsection
+\addcontentsline{toc}{chapter}{Introduzione}
+\include{introduction}
+
+\thispagestyle{plain}
+\markboth{\large{ABSTRACT}}{\large{ABSTRACT}}
+\cleardoublepage
+% \phantomsection
+\addcontentsline{toc}{chapter}{Abstract}
+\include{abstract}
+%\cleardoublepage
+% \phantomsection
+%\addcontentsline{toc}{chapter}{Acronimi}
+%\include{acronyms}
+
+\pagenumbering{arabic}
+\include{chapters/ch1}
+\include{chapters/ch2}
+\include{chapters/ch3}
+\include{chapters/ch4}
+\thispagestyle{plain}
+\markboth{\large{CONCLUSIONI}}{\large{CONCLUSIONI}}
+\addcontentsline{toc}{chapter}{Conclusioni}
+\include{conclusion}
+\appendix
+\thispagestyle{plain}
+\markboth{\large{RINGRAZIAMENTI}}{\large{RINGRAZIAMENTI}}
+\cleardoublepage
+% \phantomsection
+\addcontentsline{toc}{chapter}{Ringraziamenti}
+\include{acknowledgements}
+\thispagestyle{plain}
+\markboth{\large{BIBLIOGRAFIA}}{\large{BIBLIOGRAFIA}}
+\Urlmuskip=0mu plus 1mu\relax
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Bibliografia}
+\printbibliography[nottype=misc, heading=bibliography, title=Bibliografia] 
+\thispagestyle{plain}
+\markboth{\large{SITOGRAFIA}}{\large{SITOGRAFIA}}
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Sitografia}
+\printbibliography[type=misc, heading=bibliography, title=Sitografia]
+
+\newpage
+\pagestyle{plain}
+
+\end{document}
