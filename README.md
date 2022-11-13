@@ -2,7 +2,7 @@
 **Author**: Massimiliano Giordano Orsini <br />
 **University**: Università degli Studi di Napoli 'Parthenope' <br />
 **Bachelor's degree in**: Computer Science <br />
-**Date**: 23rd November 2022 <br />
+**Date**: November 23rd, 2022 <br />
 **Language**: Italian
 ## Abstract
 In the modern age, neural networks represent an established reality thanks to the achievement of important objectives and significant results in various application fields: from autonomous driving to medical diagnoses, passing through optical character recognition systems. The main reasons for the exponential growth of the application of neural networks are due to the ability of extracting the characteristics independently from the learning phase and to the computing power achieved by modern computers, which allows to solve heavy computational cores in relatively short times, through the latest generation graphics cards.
