@@ -1,7 +1,7 @@
 # Computational docking: advanced approaches for the analysis of molecular interactions
 **Author**: Massimiliano Giordano Orsini <br />
 **University**: Università degli Studi di Napoli 'Parthenope' <br />
-**Bachelor's degree in**: Computer Science <br />
+**Bachelor of**: Computer Science <br />
 **Date**: November 23rd, 2022 <br />
 **Language**: Italian
 ## Abstract
